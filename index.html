@@ -9,12 +9,12 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #1f2937; }
     header { background: #0f172a; color: #fff; padding: 40px; }
-    section { padding: 40px 20px; max-width: 960px; margin: auto; }
+    section { padding: 24px 20px; max-width: 960px; margin: auto; }
     h1, h2, h3 { margin-bottom: 10px; }
     p { line-height: 1.6; }
     ul { padding-left: 20px; }
     .tag { display: inline-block; background: #e5e7eb; padding: 5px 10px; margin: 4px; border-radius: 6px; font-size: 14px; }
-    .project { border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .project { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; margin-bottom: 0; }
     footer { background: #f3f4f6; padding: 20px; text-align: center; }
     a { color: #2563eb; text-decoration: none; }
     .icon-btn img { transition: transform 0.2s ease, opacity 0.2s ease; }
@@ -80,33 +80,36 @@
 
 <section>
   <h2>Portfolio Projects</h2>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px; margin-top:16px;">
 
-  <div class="project">
-    <h3>Payment Retry & Failure Handling – UPI (PRD)</h3>
-    <p>
-      A functional Product Requirements Document focused on improving UPI transaction success rates
-      through clear failure classification, retry logic, and refund visibility.
-    </p>
-    <ul>
-      <li>Defined end-to-end payment failure scenarios</li>
-      <li>Created retry eligibility rules and user messaging</li>
-      <li>Identified risks such as duplicate debits and mitigations</li>
-    </ul>
-    <p><a href="PRD_Payment_Retry_Failure_Handling_UPI.pdf" target="_blank">View PRD (PDF)</a></p>
+    <div class="project">
+      <h3>Payment Retry & Failure Handling – UPI (PRD)</h3>
+      <p>
+        Functional PRD focused on improving UPI transaction success rates through
+        failure classification, retry logic, and refund visibility.
+      </p>
+      <a href="PRD_Payment_Retry_Failure_Handling_UPI.pdf" target="_blank">View PRD (PDF)</a>
+    </div>
+
+    <div class="project">
+      <h3>Settlement & Reconciliation – Digital Payments</h3>
+      <p>
+        Case study covering settlement lifecycle, reconciliation mismatches,
+        exception handling, and operational KPIs.
+      </p>
+      <a href="Payment_Settlement_Reconciliation_Case_Study.pdf" target="_blank">View Case Study (PDF)</a>
+    </div>
+
+    <div class="project">
+      <h3>Payment Gateway Integration – BA Case Study</h3>
+      <p>
+        End-to-end analysis of gateway workflows including authorization,
+        retries, refunds, APIs, and non-functional considerations.
+      </p>
+      <a href="Payment_Gateway_Integration_Case_Study.pdf" target="_blank">View Case Study (PDF)</a>
+    </div>
+
   </div>
-
-  <div class="project">
-  <h3>Settlement & Reconciliation – Digital Payments</h3>
-  <p>Functional case study covering settlement lifecycle, reconciliation mismatches, and exception handling.</p>
-  <a href="Payment_Settlement_Reconciliation_Case_Study.pdf" target="_blank">View Case Study (PDF)</a>
-</div>
-
-<div class="project">
-  <h3>Payment Gateway Integration – BA Case Study</h3>
-  <p>End-to-end analysis of gateway workflows including authorization, retries, refunds, and APIs.</p>
-  <a href="Payment_Gateway_Integration_Case_Study.pdf" target="_blank">View Case Study (PDF)</a>
-</div>
-
 </section>
 
 <section>
