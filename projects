@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects & Experience | Vedakshi Gawde</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header { background:#0f172a; color:white; padding:20px; }
+    nav a { color:#93c5fd; margin-right:16px; text-decoration:none; font-weight:bold; }
+    section { max-width:900px; margin:auto; padding:32px 20px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; }
+    .card { border:1px solid #e5e7eb; border-radius:12px; padding:16px; }
+    .resume { margin-top:20px; display:inline-block; background:#22c55e; color:white; padding:10px 16px; border-radius:8px; text-decoration:none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vedakshi Gawde</h1>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="projects.html">Projects & Experience</a>
+    <a href="connect.html">Connect</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Portfolio Projects</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>UPI Retry & Failure Handling</h3>
+      <a href="PRD_Payment_Retry_Failure_Handling_UPI.pdf">View PRD</a>
+    </div>
+
+    <div class="card">
+      <h3>Settlement & Reconciliation</h3>
+      <a href="Payment_Settlement_Reconciliation_Case_Study.pdf">View Case Study</a>
+    </div>
+
+    <div class="card">
+      <h3>Payment Gateway Integration</h3>
+      <a href="Payment_Gateway_Integration_Case_Study.pdf">View Case Study</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Experience Snapshot</h2>
+  <ul>
+    <li>4+ years in regulated FinTech</li>
+    <li>20% reduction in requirement rework</li>
+    <li>8+ releases with zero critical defects</li>
+  </ul>
+
+  <a class="resume" href="Vedakshi_Gawde_Payments_BA_Resume_Improved.pdf">Download Resume</a>
+</section>
+
+</body>
+</html>
