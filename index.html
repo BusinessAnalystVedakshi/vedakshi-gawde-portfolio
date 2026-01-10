@@ -9,10 +9,18 @@
     header { background:#0f172a; color:white; padding:20px; }
     nav a { color:#93c5fd; margin-right:16px; text-decoration:none; font-weight:bold; }
     section { max-width:900px; margin:auto; padding:32px 20px; }
-    .about { display:flex; gap:24px; flex-wrap:wrap; }
-    img { border-radius:12px; width:180px; }
+    .about { display:flex; gap:24px; align-items:flex-start; }
+    .about img { border-radius:12px; width:180px; flex-shrink:0; }
+    .about-text { flex:1; }
+    .about-text p { margin-bottom:16px; line-height:1.6; }
+    .about-text p:last-child { margin-bottom:0; }
     .skills span { background:#e5e7eb; padding:6px 10px; border-radius:6px; margin:4px; display:inline-block; }
-    .icons img { width:22px; margin-right:10px; }
+    .icons { margin-top:16px; }
+    .icons a { display:inline-block; margin-right:10px; }
+    .icons img { width:28px; height:28px; }
+    @media (max-width: 600px) {
+      .about { flex-direction:column; }
+    }
   </style>
 </head>
 <body>
@@ -28,9 +36,9 @@
   </nav>
 
   <div class="icons">
-    <a href="mailto:gawdevedakshi@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"></a>
-    <a href="https://www.linkedin.com/in/vedakshigawde-businessanalyst"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
-    <a href="https://github.com/vedakshigawde"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>
+    <a href="mailto:gawdevedakshi@gmail.com" title="Email"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"></a>
+    <a href="https://www.linkedin.com/in/vedakshigawde-businessanalyst" title="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+    <a href="https://github.com/vedakshigawde" title="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
   </div>
 </header>
 
@@ -38,11 +46,20 @@
   <h2>About Me</h2>
   <div class="about">
     <img src="WhatsApp Image 2026-01-01 at 15.32.56.jpeg" alt="Vedakshi Gawde">
-    <p>
-      Business Analyst with 4+ years of experience in regulated FinTech environments.
-      Strong expertise in requirements elicitation, functional documentation, and UAT.
-      Currently focused on Digital Payments and Payment Gateway BA roles.
-    </p>
+    <div class="about-text">
+      <p>
+        I am a Business Analyst with 4+ years of experience working in regulated FinTech environments, where I have partnered closely with business stakeholders, product owners, and engineering teams to deliver clear, well-structured, and implementation-ready requirements.
+      </p>
+      <p>
+        My core strength lies in translating complex business problems into simple, actionable functional documentation — including BRDs, FRDs, user stories, process flows, and UAT scenarios — ensuring alignment across business and technology teams.
+      </p>
+      <p>
+        Over the years, I have developed a strong functional understanding of Digital Payments, Payment Gateway workflows, failure handling, reconciliation, and API-driven systems. I take pride in my structured thinking, attention to detail, and ability to bring clarity in high-stake, compliance-driven environments.
+      </p>
+      <p>
+        I am currently focused on Business Analyst roles within Digital Payments and FinTech platforms, where domain depth, process clarity, and execution discipline matter. I value ownership, ethical work culture, and measurable impact, and I enjoy working in teams that prioritize collaboration and accountability.
+      </p>
+    </div>
   </div>
 </section>
 
